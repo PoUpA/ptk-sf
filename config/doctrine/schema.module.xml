@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<orm-designer version="1.4.6.488">
+
+  <module import-format="DoctrineYml" import-path="schema.yml" name="PoomTshaK" visBkColor="15989236" visSizeX="35" visSizeX2="1319" visSizeY="0" visSizeY2="1093">
+    <table name="UserGroup" visPositionX="723" visPositionY="50" visSizeX="0" visSizeX2="107" visSizeY="0" visSizeY2="59">
+      <column name="Name" type="string" unique="true"/>
+      <column name="Description" type="string"/>
+      <column auto-increment="true" name="id" primary="true" required="true" type="integer" unique="true"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="PtkUser" visPositionX="29" visPositionY="38" visSizeX="0" visSizeX2="124" visSizeY="0" visSizeY2="185">
+      <column auto-increment="true" name="id" primary="true" required="true" type="integer" unique="true"/>
+      <column name="Username" required="true" type="string" unique="true"/>
+      <column name="Email" required="true" type="string" unique="true"/>
+      <column name="Password" type="string"/>
+      <column name="Firstname" type="string"/>
+      <column name="Lastname" type="string"/>
+      <column name="Address" type="string"/>
+      <column name="Address2" type="string"/>
+      <column name="City" type="string"/>
+      <column name="Zip" type="string"/>
+      <column name="Country" type="string"/>
+      <column default="false" name="IsPtkMember" type="boolean"/>
+      <column name="Image" type="string"/>
+      <column name="website" type="string"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="Subscription" visPositionX="41" visPositionY="300" visSizeX="0" visSizeX2="97" visSizeY="0" visSizeY2="73">
+      <column auto-increment="true" name="id" primary="true" required="true" type="integer" unique="true"/>
+      <column name="Date" type="date"/>
+      <column name="Ammount" required="true" type="float"/>
+      <column name="User_id" type="integer"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="UserUserGroup" visPositionX="300" visPositionY="8" visSizeX="0" visSizeX2="122" visSizeY="0" visSizeY2="74">
+      <column auto-increment="true" name="ID" primary="true" required="true" type="integer" unique="true"/>
+      <column name="User_id" required="true" type="integer"/>
+      <column name="UserGroup_id" required="true" type="integer"/>
+    </table>
+    <table name="ContentObject" visPositionX="285" visPositionY="426" visSizeX="0" visSizeX2="105" visSizeY="0" visSizeY2="101">
+      <column auto-increment="true" name="Id" primary="true" required="true" size="255" type="integer" unique="true"/>
+      <column name="Pid" size="255" type="integer"/>
+      <column name="PublishStart" type="date"/>
+      <column name="PublishEnd" type="date"/>
+      <column name="ObjectType" required="true" type="string"/>
+      <column name="User_id" type="integer"/>
+      <inheritance-parent discriminator-column="ObjectType" type="simple"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="VisibilityRestriction" visPositionX="298" visPositionY="94" visSizeX="0" visSizeX2="155" visSizeY="0" visSizeY2="74">
+      <column auto-increment="true" name="ID" primary="true" required="true" type="integer" unique="true"/>
+      <column name="ContentObject_Id" required="true" size="255" type="integer"/>
+      <column name="UserGroup_id" required="true" type="integer"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="EditPermission" visPositionX="596" visPositionY="228" visSizeX="0" visSizeX2="155" visSizeY="0" visSizeY2="74">
+      <column auto-increment="true" name="Id" primary="true" required="true" type="integer" unique="true"/>
+      <column name="ContentObject_Id" required="true" size="255" type="integer"/>
+      <column name="UserGroup_id" required="true" type="integer"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="MasterPage" visPositionX="128" visPositionY="398" visSizeX="0" visSizeX2="93" visSizeY="0" visSizeY2="31">
+      <column name="Content" type="string"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="MasterPage"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="Contact" visPositionX="-19" visPositionY="406" visSizeX="0" visSizeX2="113" visSizeY="0" visSizeY2="143">
+      <column name="Name" type="string"/>
+      <column name="Address" required="true" type="string"/>
+      <column name="Address2" type="string"/>
+      <column name="City" type="string"/>
+      <column name="Zip" type="string"/>
+      <column name="Email" type="string"/>
+      <column name="CCPNumber" type="string"/>
+      <column name="Facebook" type="string"/>
+      <column name="Twitter" type="string"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="Contact" visCenterX="-43" visCenterY="0"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="Post" visPositionX="209" visPositionY="700" visSizeX="0" visSizeX2="121" visSizeY="0" visSizeY2="87">
+      <column name="Title" required="true" type="string"/>
+      <column name="Content" required="true" type="string"/>
+      <column name="FbContentLink" type="string"/>
+      <column name="FbImportDate" type="date"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="Post"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="PostCategory" visPositionX="53" visPositionY="645" visSizeX="0" visSizeX2="131" visSizeY="0" visSizeY2="59">
+      <column name="Title" required="true" type="string" unique="true"/>
+      <column name="Description" type="string"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="PostCategory"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="PostPostCategory" visPositionX="54" visPositionY="858" visSizeX="0" visSizeX2="194" visSizeY="0" visSizeY2="74">
+      <column auto-increment="true" name="Id" primary="true" required="true" type="integer" unique="true"/>
+      <column name="Post_Id" required="true" type="integer"/>
+      <column name="PostCategory_Id" required="true" type="integer"/>
+    </table>
+    <table name="Comment" visPositionX="426" visPositionY="937" visSizeX="0" visSizeX2="130" visSizeY="0" visSizeY2="129">
+      <column name="Comment" required="true" type="string"/>
+      <column name="Post_Id" type="integer"/>
+      <column name="FbContentLink" type="string"/>
+      <column name="FbImportDate" type="date"/>
+      <column name="Album_Id" type="integer"/>
+      <column name="Photo_Id" type="integer"/>
+      <column name="Mix_Id" type="integer"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="Comment"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="Album" visPositionX="541" visPositionY="385" visSizeX="0" visSizeX2="121" visSizeY="0" visSizeY2="87">
+      <column name="Title" required="true" type="string" unique="true"/>
+      <column name="Description" required="true" type="string"/>
+      <column name="FbContentLink" type="string"/>
+      <column name="FbImportDate" type="date"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="Album"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="Photo" visPositionX="835" visPositionY="531" visSizeX="0" visSizeX2="146" visSizeY="0" visSizeY2="171">
+      <column name="Title" required="true" type="string"/>
+      <column name="Description" type="string"/>
+      <column name="Image" required="true" type="string"/>
+      <column name="ImageThumb" type="string"/>
+      <column name="ImageHeight" type="integer"/>
+      <column name="ImageWidth" type="integer"/>
+      <column name="ImageThumbWidth" type="integer"/>
+      <column name="ImageThumbHeight" type="integer"/>
+      <column name="FbContentLink" type="string"/>
+      <column name="FbImportDate" type="date"/>
+      <column name="Artist_Id" type="integer"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="Photo"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="AlbumPhoto" visPositionX="841" visPositionY="394" visSizeX="0" visSizeX2="130" visSizeY="0" visSizeY2="74">
+      <column auto-increment="true" name="Id" primary="true" required="true" type="integer" unique="true"/>
+      <column name="Album_AlbumId" required="true" type="integer"/>
+      <column name="Photo_PhotoId" required="true" type="integer"/>
+    </table>
+    <table name="Artist" visPositionX="621" visPositionY="861" visSizeX="0" visSizeX2="110" visSizeY="0" visSizeY2="115">
+      <column name="Name" required="true" type="string"/>
+      <column name="Description" type="string"/>
+      <column name="Website" type="string"/>
+      <column name="MySpace" type="string"/>
+      <column name="Facebook" type="string"/>
+      <column name="ContactInfo" type="string"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="Artist"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="Mix" visPositionX="1009" visPositionY="722" visSizeX="0" visSizeX2="122" visSizeY="0" visSizeY2="87">
+      <column name="Title" required="true" type="string"/>
+      <column name="Description" type="string"/>
+      <column name="AudioUrl" required="true" type="string"/>
+      <column name="Artist_Id" type="integer"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="Mix"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="Track" visPositionX="865" visPositionY="934" visSizeX="0" visSizeX2="122" visSizeY="0" visSizeY2="129">
+      <column name="Name" required="true" type="string"/>
+      <column name="ArtistName" type="string"/>
+      <column name="StartTime" type="string"/>
+      <column name="Comment" type="string"/>
+      <column name="Link" type="string"/>
+      <column name="Mix_Id" type="integer"/>
+      <column name="Artist_Id" type="integer"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="Event" visPositionX="1092" visPositionY="224" visSizeX="0" visSizeX2="198" visSizeY="0" visSizeY2="143">
+      <column name="Name" required="true" type="string"/>
+      <column name="Description" required="true" type="string"/>
+      <column name="Start" required="true" type="date"/>
+      <column name="End" type="date"/>
+      <column name="FbContentLink" type="string"/>
+      <column name="FbImportDate" type="string"/>
+      <column name="Photo_Id" type="integer" unique="true"/>
+      <column name="EventLocation_Id" type="integer"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="Event"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <table name="ArtistEvent" visPositionX="1009" visPositionY="404" visSizeX="0" visSizeX2="128" visSizeY="0" visSizeY2="74">
+      <column auto-increment="true" name="Id" primary="true" required="true" type="integer" unique="true"/>
+      <column name="Artist_Id" required="true" type="integer"/>
+      <column name="Event_Id" required="true" type="integer"/>
+    </table>
+    <table name="EventLocation" visPositionX="1130" visPositionY="22" visSizeX="0" visSizeX2="133" visSizeY="0" visSizeY2="185">
+      <column name="Name" required="true" type="string"/>
+      <column name="Description" type="string"/>
+      <column name="Email" type="string"/>
+      <column name="Address" type="string"/>
+      <column name="Address2" type="string"/>
+      <column name="City" type="string"/>
+      <column name="Zip" type="string"/>
+      <column name="Phone" type="string"/>
+      <column name="MapUrl" type="string"/>
+      <column name="Website" type="string"/>
+      <column name="LocationImage" type="string"/>
+      <inheritance-child derived-from="ContentObject" discriminator-value="EventLocation"/>
+      <orm-properties>
+        <attribute name="actAs">
+          <attribute name="Timestampable"/>
+        </attribute>
+      </orm-properties>
+    </table>
+    <foreign-key caption="User Subscription" from="Subscription" name="FK_Subscription_User_id" to="PtkUser">
+      <foreign-key-column from="User_id" to="id"/>
+    </foreign-key>
+    <foreign-key caption="User UserUserGroup" from="UserUserGroup" name="FK_UserUserGroup_User_id" to="PtkUser">
+      <foreign-key-column from="User_id" to="id"/>
+    </foreign-key>
+    <foreign-key caption="UserGroup UserUserGroup" from="UserUserGroup" name="FK_UserUserGroup_UserGroup_id" to="UserGroup">
+      <foreign-key-column from="UserGroup_id" to="id"/>
+    </foreign-key>
+    <foreign-key caption="Pid" from="ContentObject" inverse-alias="" name="FK_ContentObject_ContentObject_Id" owning-alias="" to="ContentObject" visCaption1X="0" visCaption1Y="0" visCenterX="0" visCenterY="-20">
+      <foreign-key-column from="Pid" to="Id"/>
+    </foreign-key>
+    <foreign-key caption="User ContentObject" from="ContentObject" name="FK_ContentObject_User_id" to="PtkUser" visCaption1X="-12" visCaption1Y="-2" visCenterX="0" visCenterY="0">
+      <foreign-key-column from="User_id" to="id"/>
+    </foreign-key>
+    <foreign-key caption="ContentObject VisibilityRestriction" from="VisibilityRestriction" name="FK_VisibilityRestriction_ContentObject_Id" to="ContentObject">
+      <foreign-key-column from="ContentObject_Id" to="Id"/>
+    </foreign-key>
+    <foreign-key caption="UserGroup VisibilityRestriction" from="VisibilityRestriction" name="FK_VisibilityRestriction_UserGroup_id" to="UserGroup">
+      <foreign-key-column from="UserGroup_id" to="id"/>
+    </foreign-key>
+    <foreign-key caption="ContentObject EditPermission" from="EditPermission" name="FK_EditPermission_ContentObject_Id" to="ContentObject">
+      <foreign-key-column from="ContentObject_Id" to="Id"/>
+    </foreign-key>
+    <foreign-key caption="UserGroup EditPermission" from="EditPermission" name="FK_EditPermission_UserGroup_id" to="UserGroup">
+      <foreign-key-column from="UserGroup_id" to="id"/>
+    </foreign-key>
+    <foreign-key caption="Post PostPostCategory" from="PostPostCategory" name="FK_PostPostCategory_Post_Id" to="Post"/>
+    <foreign-key caption="PostCategory PostPostCategory" from="PostPostCategory" name="FK_PostPostCategory_PostCategory_Id" to="PostCategory"/>
+    <foreign-key caption="Post Comment" from="Comment" name="FK_Comment_Post_Id" to="Post"/>
+    <foreign-key caption="Album Comment" from="Comment" name="FK_Comment_Album_Id" to="Album"/>
+    <foreign-key caption="Photo Comment" from="Comment" name="FK_Comment_Photo_Id" to="Photo"/>
+    <foreign-key caption="Mix Comment" from="Comment" name="FK_Comment_Mix_Id" to="Mix"/>
+    <foreign-key caption="Artist Photo" from="Photo" name="FK_Photo_Artist_Id" to="Artist"/>
+    <foreign-key caption="Album AlbumPhoto" from="AlbumPhoto" name="FK_AlbumPhoto_Album_Id" to="Album"/>
+    <foreign-key caption="Photo AlbumPhoto" from="AlbumPhoto" name="FK_AlbumPhoto_Photo_Id" to="Photo"/>
+    <foreign-key caption="Artist Mix" from="Mix" name="FK_Mix_Artist_Id" to="Artist"/>
+    <foreign-key caption="Mix Track" from="Track" name="FK_Track_Mix_Id" to="Mix"/>
+    <foreign-key caption="Artist Track" from="Track" name="FK_Track_Artist_Id" to="Artist"/>
+    <foreign-key caption="Flyer" description="Flyer" from="Event" name="FK_Event_Photo_Id" to="Photo"/>
+    <foreign-key caption="EventLocation Event" from="Event" name="FK_Event_EventLocation_Id" to="EventLocation"/>
+    <foreign-key caption="Artist ArtistEvent" from="ArtistEvent" name="FK_ArtistEvent_Artist_Id" to="Artist"/>
+    <foreign-key caption="Event ArtistEvent" from="ArtistEvent" name="FK_ArtistEvent_Event_Id" to="Event"/>
+    <many-to-many-relation mn-table="UserUserGroup">
+      <many-to-many-foreign-key foreign-key="FK_UserUserGroup_User_id" relation-alias=""/>
+      <many-to-many-foreign-key foreign-key="FK_UserUserGroup_UserGroup_id" relation-alias=""/>
+    </many-to-many-relation>
+    <many-to-many-relation mn-table="VisibilityRestriction">
+      <many-to-many-foreign-key foreign-key="FK_VisibilityRestriction_ContentObject_Id" relation-alias=""/>
+      <many-to-many-foreign-key foreign-key="FK_VisibilityRestriction_UserGroup_id" relation-alias=""/>
+    </many-to-many-relation>
+    <many-to-many-relation mn-table="EditPermission">
+      <many-to-many-foreign-key foreign-key="FK_EditPermission_ContentObject_Id" relation-alias=""/>
+      <many-to-many-foreign-key foreign-key="FK_EditPermission_UserGroup_id" relation-alias=""/>
+    </many-to-many-relation>
+    <many-to-many-relation mn-table="PostPostCategory">
+      <many-to-many-foreign-key foreign-key="FK_PostPostCategory_Post_Id" relation-alias=""/>
+      <many-to-many-foreign-key foreign-key="FK_PostPostCategory_PostCategory_Id" relation-alias=""/>
+    </many-to-many-relation>
+    <many-to-many-relation mn-table="AlbumPhoto">
+      <many-to-many-foreign-key foreign-key="FK_AlbumPhoto_Album_Id" relation-alias=""/>
+      <many-to-many-foreign-key foreign-key="FK_AlbumPhoto_Photo_Id" relation-alias=""/>
+    </many-to-many-relation>
+    <many-to-many-relation mn-table="ArtistEvent">
+      <many-to-many-foreign-key foreign-key="FK_ArtistEvent_Artist_Id" relation-alias=""/>
+      <many-to-many-foreign-key foreign-key="FK_ArtistEvent_Event_Id" relation-alias=""/>
+    </many-to-many-relation>
+  </module>
+
+</orm-designer>

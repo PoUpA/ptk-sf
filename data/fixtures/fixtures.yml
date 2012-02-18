@@ -15,3 +15,22 @@
 #     password: changeme
 #     name:     Kris Wallsmith
 #     email:    kris.wallsmith@symfony-project.com
+
+PtkUser:
+  Admin:
+    Username: Admin
+    Password: le livre de la jungle
+    Email: poomtshak@gmail.com
+  PoUpA:
+    Username: PoUpA
+    Password: link64
+    Email: euphorikdjs@gmail.com
+UserGroup: 
+  Admin:
+    Name: Admin
+    Description : Administrators of the website
+    UserUserGroup: 
+      PoUpA:
+        PtkUser: PoUpA
+      Admin:
+        PtkUser: Admin

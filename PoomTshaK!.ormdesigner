@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<orm-designer version="1.4.6.488">
+
+  <include name="config\doctrine\schema.module.xml"/>
+
+  <project code-name="PoomTshaK!" framework="Symfony" name="PoomTshaK!" orm="Doctrine" visSizeX="0" visSizeX2="1419" visSizeY="0" visSizeY2="1193">
+    <module-position name="PoomTshaK" visPositionX="50" visPositionY="50"/>
+  </project>
+
+</orm-designer>

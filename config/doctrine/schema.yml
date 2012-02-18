@@ -1,0 +1,541 @@
+UserGroup:
+  actAs:
+    Timestampable: 
+  columns:
+    Name:
+      unique: true
+      type: string(255)
+    Description:
+      type: string(4000)
+    id:
+      primary: true
+      unique: true
+      type: integer
+      notnull: true
+      autoincrement: true
+PtkUser:
+  actAs:
+    Timestampable: 
+  columns:
+    id:
+      primary: true
+      unique: true
+      type: integer
+      notnull: true
+      autoincrement: true
+    Username:
+      unique: true
+      type: string(255)
+      notnull: true
+    Email:
+      unique: true
+      type: string(255)
+      notnull: true
+    Password:
+      type: string(255)
+    Firstname:
+      type: string(255)
+    Lastname:
+      type: string(255)
+    Address:
+      type: string(3000)
+    Address2:
+      type: string(3000)
+    City:
+      type: string(255)
+    Zip:
+      type: string(255)
+    Country:
+      type: string(255)
+    IsPtkMember:
+      default: false
+      type: boolean
+    Image:
+      type: string(255)
+    website:
+      type: string(255)
+Subscription:
+  actAs:
+    Timestampable: 
+  columns:
+    id:
+      primary: true
+      unique: true
+      type: integer
+      notnull: true
+      autoincrement: true
+    Date:
+      type: date
+    Ammount:
+      type: float
+      notnull: true
+    User_id:
+      type: integer
+  relations:
+    PtkUser:
+      local: User_id
+      foreign: id
+UserUserGroup:
+  columns:
+    Id:
+      primary: true
+      unique: true
+      type: integer
+      notnull: true
+      autoincrement: true
+    User_id:
+      type: integer
+      notnull: true
+    UserGroup_id:
+      type: integer
+      notnull: true
+  relations:
+    PtkUser:
+      local: User_id
+      foreign: id
+    UserGroup:
+      local: UserGroup_id
+      foreign: id
+ContentObject:
+  actAs:
+    Timestampable: 
+  columns:
+    Id:
+      primary: true
+      unique: true
+      type: integer(255)
+      notnull: true
+      autoincrement: true
+    Pid:
+      type: integer(255)
+    PublishStart:
+      type: date
+    PublishEnd:
+      type: date
+    ObjectType:
+      type: string(255)
+      notnull: true
+    User_id:
+      type: integer
+  relations:
+    ContentObject:
+      local: Pid
+      foreign: Id
+    PtkUser:
+      local: User_id
+      foreign: id
+VisibilityRestriction:
+  actAs:
+    Timestampable: 
+  columns:
+    ID:
+      primary: true
+      unique: true
+      type: integer
+      notnull: true
+      autoincrement: true
+    ContentObject_Id:
+      type: integer(255)
+      notnull: true
+    UserGroup_id:
+      type: integer
+      notnull: true
+  relations:
+    ContentObject:
+      local: ContentObject_Id
+      foreign: Id
+    UserGroup:
+      local: UserGroup_id
+      foreign: id
+EditPermission:
+  actAs:
+    Timestampable: 
+  columns:
+    Id:
+      primary: true
+      unique: true
+      type: integer
+      notnull: true
+      autoincrement: true
+    ContentObject_Id:
+      type: integer(255)
+      notnull: true
+    UserGroup_id:
+      type: integer
+      notnull: true
+  relations:
+    ContentObject:
+      local: ContentObject_Id
+      foreign: Id
+    UserGroup:
+      local: UserGroup_id
+      foreign: id
+MasterPage:
+  actAs:
+    Timestampable: 
+  columns:
+    Content:
+      type: string(255)
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: MasterPage
+Contact:
+  actAs:
+    Timestampable: 
+  columns:
+    Name:
+      type: string(255)
+    Address:
+      type: string(3000)
+      notnull: true
+    Address2:
+      type: string(3000)
+    City:
+      type: string(255)
+    Zip:
+      type: string(255)
+    Email:
+      type: string(255)
+    CCPNumber:
+      type: string(255)
+    Facebook:
+      type: string(255)
+    Twitter:
+      type: string(255)
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: Contact
+Post:
+  actAs:
+    Timestampable: 
+  columns:
+    Title:
+      type: string(255)
+      notnull: true
+    Content:
+      type: string(255)
+      notnull: true
+    FbContentLink:
+      type: string(255)
+    FbImportDate:
+      type: date
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: Post
+PostCategory:
+  actAs:
+    Timestampable: 
+  columns:
+    Title:
+      unique: true
+      type: string(255)
+      notnull: true
+    Description:
+      type: string(4000)
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: PostCategory
+PostPostCategory:
+  columns:
+    Id:
+      primary: true
+      unique: true
+      type: integer
+      notnull: true
+      autoincrement: true
+    Post_Id:
+      type: integer
+      notnull: true
+    PostCategory_Id:
+      type: integer
+      notnull: true
+  relations:
+    Post:
+      local: Post_Id
+      foreign: id
+    PostCategory:
+      local: PostCategory_Id
+      foreign: id
+Comment:
+  actAs:
+    Timestampable: 
+  columns:
+    Comment:
+      type: string(255)
+      notnull: true
+    Post_Id:
+      type: integer
+    FbContentLink:
+      type: string(255)
+    FbImportDate:
+      type: date
+    Album_Id:
+      type: integer
+    Photo_Id:
+      type: integer
+    Mix_Id:
+      type: integer
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: Comment
+  relations:
+    Post:
+      local: Post_Id
+      foreign: id 
+    Album:
+      local: Album_Id
+      foreign: id  
+    Photo:
+      local: Photo_Id
+      foreign: id  
+    Mix:
+      local: Mix_Id
+      foreign: id  
+Album:
+  actAs:
+    Timestampable: 
+  columns:
+    Title:
+      unique: true
+      type: string(255)
+      notnull: true
+    Description:
+      type: string(4000)
+      notnull: true
+    FbContentLink:
+      type: string(255)
+    FbImportDate:
+      type: date
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: Album
+Photo:
+  actAs:
+    Timestampable: 
+  columns:
+    Title:
+      type: string(255)
+      notnull: true
+    Description:
+      type: string(4000)
+    Image:
+      type: string(255)
+      notnull: true
+    ImageThumb:
+      type: string(255)
+    ImageHeight:
+      type: integer
+    ImageWidth:
+      type: integer
+    ImageThumbWidth:
+      type: integer
+    ImageThumbHeight:
+      type: integer
+    FbContentLink:
+      type: string(255)
+    FbImportDate:
+      type: date
+    Artist_Id:
+      type: integer
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: Photo
+  relations:
+    Artist:
+      local: Artist_Id
+      foreign: id  
+AlbumPhoto:
+  columns:
+    Id:
+      primary: true
+      unique: true
+      type: integer
+      notnull: true
+      autoincrement: true
+    Album_Id:
+      type: integer
+      notnull: true
+    Photo_Id:
+      type: integer
+      notnull: true
+  relations:
+    Album:
+      local: Album_Id
+      foreign: id  
+    Photo:
+      local: Photo_Id
+      foreign: id 
+Artist:
+  actAs:
+    Timestampable: 
+  columns:
+    Name:
+      type: string(255)
+      notnull: true
+    Description:
+      type: string(4000)
+    Website:
+      type: string(255)
+    MySpace:
+      type: string(255)
+    Facebook:
+      type: string(255)
+    ContactInfo:
+      type: string(255)
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: Artist
+Mix:
+  actAs:
+    Timestampable: 
+  columns:
+    Title:
+      type: string(255)
+      notnull: true
+    Description:
+      type: string(4000)
+    AudioUrl:
+      type: string(255)
+      notnull: true
+    Artist_Id:
+      type: integer
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: Mix
+  relations:
+    Artist:
+      local: Artist_Id
+      foreign: id  
+Track:
+  actAs:
+    Timestampable: 
+  columns:
+    Name:
+      type: string(255)
+      notnull: true
+    ArtistName:
+      type: string(255)
+    StartTime:
+      type: string(255)
+    Comment:
+      type: string(255)
+    Link:
+      type: string(255)
+    Mix_Id:
+      type: integer
+    Artist_Id:
+      type: integer
+  relations:
+    Mix:
+      local: Mix_Id
+      foreign: id
+    Artist:
+      local: Artist_Id
+      foreign: id 
+Event:
+  actAs:
+    Timestampable: 
+  columns:
+    Name:
+      type: string(255)
+      notnull: true
+    Description:
+      type: string(4000)
+      notnull: true
+    Start:
+      type: date
+      notnull: true
+    End:
+      type: date
+    FbContentLink:
+      type: string(255)
+    FbImportDate:
+      type: string(255)
+    Photo_Id:
+      unique: true
+      type: integer
+    EventLocation_Id:
+      type: integer
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: Event
+  relations:
+    Photo:
+      local: Photo_Id
+      foreign: id  
+    EventLocation:
+      local: EventLocation_Id
+      foreign: id 
+ArtistEvent:
+  columns:
+    Id:
+      primary: true
+      unique: true
+      type: integer
+      notnull: true
+      autoincrement: true
+    Artist_Id:
+      type: integer
+      notnull: true
+    Event_Id:
+      type: integer
+      notnull: true
+  relations:
+    Artist:
+      local: Artist_Id
+      foreign: id 
+    Event:
+      local: Event_Id
+      foreign: id 
+EventLocation:
+  actAs:
+    Timestampable: 
+  columns:
+    Name:
+      type: string(255)
+      notnull: true
+    Description:
+      type: string(4000)
+    Email:
+      type: string(255)
+    Address:
+      type: string(3000)
+    Address2:
+      type: string(3000)
+    City:
+      type: string(255)
+    Zip:
+      type: string(255)
+    Phone:
+      type: string(255)
+    MapUrl:
+      type: string(255)
+    Website:
+      type: string(255)
+    LocationImage:
+      type: string(255)
+  inheritance:
+    extends: ContentObject
+    type: simple
+    keyField: ObjectType
+    keyValue: EventLocation
