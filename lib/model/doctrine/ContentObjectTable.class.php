@@ -16,4 +16,14 @@ class ContentObjectTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('ContentObject');
     }
+    /**
+     * Returns a collection of "primary" ContentObject.
+     *
+     * @return object ContentObjectTable
+     */
+    public function getPrimaryContentOjects()
+    {
+        $q = $this->createQuery('co')->where('co.Pid IS NULL');
+        return $q->execute();
+    }
 }

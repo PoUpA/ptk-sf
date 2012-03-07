@@ -175,7 +175,7 @@ MasterPage:
     Timestampable: 
   columns:
     Content:
-      type: string(255)
+      type: string(4000)
   inheritance:
     extends: ContentObject
     type: simple

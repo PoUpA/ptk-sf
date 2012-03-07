@@ -12,3 +12,855 @@ févr. 04 19:50:11 symfony [info] {sfWebDebugLogger} Factories 97.30 ms (1)
 févr. 04 19:50:11 symfony [info] {sfWebDebugLogger} Action "default/index" 0.12 ms (1)
 févr. 04 19:50:11 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 15.71 ms (1)
 févr. 04 19:50:11 symfony [info] {sfWebResponse} Send content (30543 o)
+févr. 18 16:06:02 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 16:06:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:06:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:06:02 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 16:06:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:06:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 16:06:02 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 16:06:03 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:06:03 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:06:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:06:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:06:03 symfony [info] {sfWebDebugLogger} Configuration 28.00 ms (10)
+févr. 18 16:06:03 symfony [info] {sfWebDebugLogger} Factories 33.12 ms (1)
+févr. 18 16:06:03 symfony [info] {sfWebDebugLogger} Action "user/index" 41.73 ms (1)
+févr. 18 16:06:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 18 16:06:03 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 20.34 ms (1)
+févr. 18 16:06:03 symfony [info] {sfWebResponse} Send content (34335 o)
+févr. 18 16:06:43 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 16:06:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:06:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:06:43 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 16:06:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:06:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 16:06:43 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 16:06:43 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:06:43 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:06:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:06:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:06:43 symfony [info] {sfWebDebugLogger} Configuration 8.01 ms (9)
+févr. 18 16:06:43 symfony [info] {sfWebDebugLogger} Factories 33.13 ms (1)
+févr. 18 16:06:43 symfony [info] {sfWebDebugLogger} Action "user/index" 32.95 ms (1)
+févr. 18 16:06:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 16:06:43 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 16.68 ms (1)
+févr. 18 16:06:43 symfony [info] {sfWebResponse} Send content (34612 o)
+févr. 18 16:07:06 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/show/id/13 with parameters array (  'module' => 'user',  'action' => 'show',  'id' => '13',)
+févr. 18 16:07:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:07:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:07:06 symfony [info] {userActions} Call "userActions->executeShow()"
+févr. 18 16:07:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:07:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p WHERE (p.id = ?) LIMIT 1 - (13)
+févr. 18 16:07:06 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/showSuccess.php"
+févr. 18 16:07:06 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:07:06 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:07:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:07:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:07:06 symfony [info] {sfWebDebugLogger} Configuration 9.85 ms (9)
+févr. 18 16:07:06 symfony [info] {sfWebDebugLogger} Factories 37.30 ms (1)
+févr. 18 16:07:06 symfony [info] {sfWebDebugLogger} Action "user/show" 36.67 ms (1)
+févr. 18 16:07:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 16:07:06 symfony [info] {sfWebDebugLogger} View "Success" for "user/show" 17.59 ms (1)
+févr. 18 16:07:06 symfony [info] {sfWebResponse} Send content (34938 o)
+févr. 18 16:07:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/edit/id/13 with parameters array (  'module' => 'user',  'action' => 'edit',  'id' => '13',)
+févr. 18 16:07:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:07:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:07:11 symfony [info] {userActions} Call "userActions->executeEdit()"
+févr. 18 16:07:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:07:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p WHERE (p.id = ?) LIMIT 1 - (13)
+févr. 18 16:07:11 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/editSuccess.php"
+févr. 18 16:07:11 symfony [info] {sfPartialView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/_form.php"
+févr. 18 16:07:11 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:07:11 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:07:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:07:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:07:11 symfony [info] {sfWebDebugLogger} Configuration 9.41 ms (9)
+févr. 18 16:07:11 symfony [info] {sfWebDebugLogger} Factories 35.43 ms (1)
+févr. 18 16:07:11 symfony [info] {sfWebDebugLogger} Action "user/edit" 50.99 ms (1)
+févr. 18 16:07:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 18 16:07:11 symfony [info] {sfWebDebugLogger} View "Success" for "user/edit" 38.02 ms (1)
+févr. 18 16:07:11 symfony [info] {sfWebDebugLogger} Partial "user/_form" 23.46 ms (1)
+févr. 18 16:07:11 symfony [info] {sfWebResponse} Send content (55681 o)
+févr. 18 16:07:40 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 16:07:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:07:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:07:40 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 16:07:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:07:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 16:07:40 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 16:07:40 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:07:40 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:07:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:07:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:07:40 symfony [info] {sfWebDebugLogger} Configuration 9.58 ms (9)
+févr. 18 16:07:40 symfony [info] {sfWebDebugLogger} Factories 36.75 ms (1)
+févr. 18 16:07:40 symfony [info] {sfWebDebugLogger} Action "user/index" 30.84 ms (1)
+févr. 18 16:07:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 18 16:07:40 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 19.91 ms (1)
+févr. 18 16:07:40 symfony [info] {sfWebResponse} Send content (34700 o)
+févr. 18 16:16:16 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+févr. 18 16:16:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:16:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:16:16 symfony [info] {userActions} Call "userActions->executeNew()"
+févr. 18 16:16:16 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/newSuccess.php"
+févr. 18 16:16:16 symfony [info] {sfPartialView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/_form.php"
+févr. 18 16:16:16 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:16:16 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:16:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:16:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:16:16 symfony [info] {sfWebDebugLogger} Configuration 7.87 ms (9)
+févr. 18 16:16:16 symfony [info] {sfWebDebugLogger} Factories 36.67 ms (1)
+févr. 18 16:16:16 symfony [info] {sfWebDebugLogger} Action "user/new" 29.49 ms (1)
+févr. 18 16:16:16 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 37.31 ms (1)
+févr. 18 16:16:16 symfony [info] {sfWebDebugLogger} Partial "user/_form" 22.76 ms (1)
+févr. 18 16:16:16 symfony [info] {sfWebResponse} Send content (50170 o)
+févr. 18 16:16:18 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 16:16:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:16:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:16:18 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 16:16:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:16:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 16:16:18 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 16:16:18 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:16:18 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:16:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:16:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:16:18 symfony [info] {sfWebDebugLogger} Configuration 6.83 ms (9)
+févr. 18 16:16:18 symfony [info] {sfWebDebugLogger} Factories 34.68 ms (1)
+févr. 18 16:16:18 symfony [info] {sfWebDebugLogger} Action "user/index" 31.73 ms (1)
+févr. 18 16:16:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 16:16:18 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 17.44 ms (1)
+févr. 18 16:16:18 symfony [info] {sfWebResponse} Send content (34700 o)
+févr. 18 16:17:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+févr. 18 16:17:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:17:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:17:24 symfony [info] {userActions} Call "userActions->executeNew()"
+févr. 18 16:17:24 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/newSuccess.php"
+févr. 18 16:17:24 symfony [info] {sfPartialView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/_form.php"
+févr. 18 16:17:24 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:24 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:17:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:17:24 symfony [info] {sfWebDebugLogger} Configuration 9.84 ms (9)
+févr. 18 16:17:24 symfony [info] {sfWebDebugLogger} Factories 35.98 ms (1)
+févr. 18 16:17:24 symfony [info] {sfWebDebugLogger} Action "user/new" 31.57 ms (1)
+févr. 18 16:17:24 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 38.00 ms (1)
+févr. 18 16:17:24 symfony [info] {sfWebDebugLogger} Partial "user/_form" 23.62 ms (1)
+févr. 18 16:17:24 symfony [info] {sfWebResponse} Send content (50170 o)
+févr. 18 16:17:27 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 16:17:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:17:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:17:27 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 16:17:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:17:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 16:17:27 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 16:17:27 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:27 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:17:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:17:27 symfony [info] {sfWebDebugLogger} Configuration 7.94 ms (9)
+févr. 18 16:17:27 symfony [info] {sfWebDebugLogger} Factories 33.29 ms (1)
+févr. 18 16:17:27 symfony [info] {sfWebDebugLogger} Action "user/index" 34.95 ms (1)
+févr. 18 16:17:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 18 16:17:27 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 17.63 ms (1)
+févr. 18 16:17:27 symfony [info] {sfWebResponse} Send content (34693 o)
+févr. 18 16:17:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/show/id/14 with parameters array (  'module' => 'user',  'action' => 'show',  'id' => '14',)
+févr. 18 16:17:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:17:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:17:31 symfony [info] {userActions} Call "userActions->executeShow()"
+févr. 18 16:17:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:17:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p WHERE (p.id = ?) LIMIT 1 - (14)
+févr. 18 16:17:31 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/showSuccess.php"
+févr. 18 16:17:31 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:31 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:17:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:17:31 symfony [info] {sfWebDebugLogger} Configuration 8.21 ms (9)
+févr. 18 16:17:31 symfony [info] {sfWebDebugLogger} Factories 33.77 ms (1)
+févr. 18 16:17:31 symfony [info] {sfWebDebugLogger} Action "user/show" 39.06 ms (1)
+févr. 18 16:17:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 16:17:31 symfony [info] {sfWebDebugLogger} View "Success" for "user/show" 16.91 ms (1)
+févr. 18 16:17:31 symfony [info] {sfWebResponse} Send content (34925 o)
+févr. 18 16:17:35 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 16:17:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:17:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:17:35 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 16:17:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:17:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 16:17:35 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 16:17:35 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:35 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:17:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:17:35 symfony [info] {sfWebDebugLogger} Configuration 8.36 ms (9)
+févr. 18 16:17:35 symfony [info] {sfWebDebugLogger} Factories 35.02 ms (1)
+févr. 18 16:17:35 symfony [info] {sfWebDebugLogger} Action "user/index" 42.83 ms (1)
+févr. 18 16:17:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 16:17:35 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 18.05 ms (1)
+févr. 18 16:17:35 symfony [info] {sfWebResponse} Send content (34700 o)
+févr. 18 16:17:37 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/show/id/13 with parameters array (  'module' => 'user',  'action' => 'show',  'id' => '13',)
+févr. 18 16:17:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:17:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:17:37 symfony [info] {userActions} Call "userActions->executeShow()"
+févr. 18 16:17:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:17:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p WHERE (p.id = ?) LIMIT 1 - (13)
+févr. 18 16:17:37 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/showSuccess.php"
+févr. 18 16:17:37 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:37 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:17:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:17:37 symfony [info] {sfWebDebugLogger} Configuration 8.80 ms (9)
+févr. 18 16:17:37 symfony [info] {sfWebDebugLogger} Factories 33.88 ms (1)
+févr. 18 16:17:37 symfony [info] {sfWebDebugLogger} Action "user/show" 39.43 ms (1)
+févr. 18 16:17:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 18 16:17:37 symfony [info] {sfWebDebugLogger} View "Success" for "user/show" 16.16 ms (1)
+févr. 18 16:17:37 symfony [info] {sfWebResponse} Send content (34938 o)
+févr. 18 16:17:38 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 16:17:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:17:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:17:38 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 16:17:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:17:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 16:17:38 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 16:17:38 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:38 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:17:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:17:38 symfony [info] {sfWebDebugLogger} Configuration 8.40 ms (9)
+févr. 18 16:17:38 symfony [info] {sfWebDebugLogger} Factories 33.23 ms (1)
+févr. 18 16:17:38 symfony [info] {sfWebDebugLogger} Action "user/index" 33.89 ms (1)
+févr. 18 16:17:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 16:17:38 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 18.69 ms (1)
+févr. 18 16:17:38 symfony [info] {sfWebResponse} Send content (34700 o)
+févr. 18 16:17:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/show/id/14 with parameters array (  'module' => 'user',  'action' => 'show',  'id' => '14',)
+févr. 18 16:17:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:17:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:17:46 symfony [info] {userActions} Call "userActions->executeShow()"
+févr. 18 16:17:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:17:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p WHERE (p.id = ?) LIMIT 1 - (14)
+févr. 18 16:17:46 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/showSuccess.php"
+févr. 18 16:17:46 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:46 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:17:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:17:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:17:46 symfony [info] {sfWebDebugLogger} Configuration 8.47 ms (9)
+févr. 18 16:17:46 symfony [info] {sfWebDebugLogger} Factories 34.16 ms (1)
+févr. 18 16:17:46 symfony [info] {sfWebDebugLogger} Action "user/show" 39.69 ms (1)
+févr. 18 16:17:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 18 16:17:46 symfony [info] {sfWebDebugLogger} View "Success" for "user/show" 17.71 ms (1)
+févr. 18 16:17:46 symfony [info] {sfWebResponse} Send content (34925 o)
+févr. 18 16:18:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 16:18:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:18:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:18:45 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 16:18:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:18:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 16:18:45 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 16:18:45 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:18:45 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:18:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:18:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:18:45 symfony [info] {sfWebDebugLogger} Configuration 8.47 ms (9)
+févr. 18 16:18:45 symfony [info] {sfWebDebugLogger} Factories 34.38 ms (1)
+févr. 18 16:18:45 symfony [info] {sfWebDebugLogger} Action "user/index" 44.04 ms (1)
+févr. 18 16:18:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 16:18:45 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 17.49 ms (1)
+févr. 18 16:18:45 symfony [info] {sfWebResponse} Send content (34700 o)
+févr. 18 16:18:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+févr. 18 16:18:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:18:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:18:47 symfony [info] {userActions} Call "userActions->executeNew()"
+févr. 18 16:18:47 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/newSuccess.php"
+févr. 18 16:18:47 symfony [info] {sfPartialView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/_form.php"
+févr. 18 16:18:47 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:18:47 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:18:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:18:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:18:47 symfony [info] {sfWebDebugLogger} Configuration 8.07 ms (9)
+févr. 18 16:18:47 symfony [info] {sfWebDebugLogger} Factories 33.77 ms (1)
+févr. 18 16:18:47 symfony [info] {sfWebDebugLogger} Action "user/new" 30.14 ms (1)
+févr. 18 16:18:47 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 35.80 ms (1)
+févr. 18 16:18:47 symfony [info] {sfWebDebugLogger} Partial "user/_form" 21.97 ms (1)
+févr. 18 16:18:47 symfony [info] {sfWebResponse} Send content (50170 o)
+févr. 18 16:18:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/create with parameters array (  'module' => 'user',  'action' => 'create',)
+févr. 18 16:18:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:18:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:18:48 symfony [info] {userActions} Call "userActions->executeCreate()"
+févr. 18 16:18:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:18:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p WHERE (p.id = ?) - ()
+févr. 18 16:18:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p WHERE (p.username = ?) - ()
+févr. 18 16:18:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p WHERE (p.email = ?) - ()
+févr. 18 16:18:48 symfony [info] {userActions} Change template to "CURRENT/new"
+févr. 18 16:18:48 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/newSuccess.php"
+févr. 18 16:18:48 symfony [info] {sfPartialView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/_form.php"
+févr. 18 16:18:48 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:18:48 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:18:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:18:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:18:48 symfony [info] {sfWebDebugLogger} Configuration 8.22 ms (9)
+févr. 18 16:18:48 symfony [info] {sfWebDebugLogger} Factories 33.48 ms (1)
+févr. 18 16:18:48 symfony [info] {sfWebDebugLogger} Action "user/create" 59.63 ms (1)
+févr. 18 16:18:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (4)
+févr. 18 16:18:48 symfony [info] {sfWebDebugLogger} View "Success" for "user/create" 36.34 ms (1)
+févr. 18 16:18:48 symfony [info] {sfWebDebugLogger} Partial "user/_form" 22.54 ms (1)
+févr. 18 16:18:48 symfony [info] {sfWebResponse} Send content (63171 o)
+févr. 18 16:19:03 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 16:19:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 16:19:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 16:19:03 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 16:19:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 16:19:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 16:19:03 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 16:19:03 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:19:03 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 16:19:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 16:19:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 16:19:03 symfony [info] {sfWebDebugLogger} Configuration 8.40 ms (9)
+févr. 18 16:19:03 symfony [info] {sfWebDebugLogger} Factories 34.19 ms (1)
+févr. 18 16:19:03 symfony [info] {sfWebDebugLogger} Action "user/index" 33.56 ms (1)
+févr. 18 16:19:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 16:19:03 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 17.32 ms (1)
+févr. 18 16:19:03 symfony [info] {sfWebResponse} Send content (34696 o)
+févr. 18 21:38:51 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 21:38:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 21:38:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 21:38:51 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 21:38:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 21:38:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 21:38:52 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 21:38:52 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 21:38:52 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 21:38:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 21:38:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 21:38:52 symfony [info] {sfWebDebugLogger} Configuration 8.75 ms (9)
+févr. 18 21:38:52 symfony [info] {sfWebDebugLogger} Factories 77.86 ms (1)
+févr. 18 21:38:52 symfony [info] {sfWebDebugLogger} Action "user/index" 63.76 ms (1)
+févr. 18 21:38:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 21:38:52 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 37.52 ms (1)
+févr. 18 21:38:52 symfony [info] {sfWebResponse} Send content (34612 o)
+févr. 18 22:11:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+févr. 18 22:11:31 symfony [info] {myUser} Automatic user logout due to timeout
+févr. 18 22:11:31 symfony [info] {myUser} User is not authenticated
+févr. 18 22:11:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 22:11:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 22:11:31 symfony [info] {userActions} Call "userActions->executeNew()"
+févr. 18 22:11:31 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/newSuccess.php"
+févr. 18 22:11:31 symfony [info] {sfPartialView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/_form.php"
+févr. 18 22:11:32 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 22:11:32 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 22:11:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 22:11:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 22:11:32 symfony [info] {sfWebDebugLogger} Configuration 7.15 ms (9)
+févr. 18 22:11:32 symfony [info] {sfWebDebugLogger} Factories 33.77 ms (1)
+févr. 18 22:11:32 symfony [info] {sfWebDebugLogger} Action "user/new" 81.48 ms (1)
+févr. 18 22:11:32 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 41.37 ms (1)
+févr. 18 22:11:32 symfony [info] {sfWebDebugLogger} Partial "user/_form" 25.18 ms (1)
+févr. 18 22:11:32 symfony [info] {sfWebResponse} Send content (50879 o)
+févr. 18 22:11:33 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 22:11:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 22:11:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 22:11:33 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 22:11:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 22:11:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 22:11:33 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 22:11:33 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 22:11:33 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 22:11:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 22:11:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 22:11:33 symfony [info] {sfWebDebugLogger} Configuration 6.10 ms (9)
+févr. 18 22:11:33 symfony [info] {sfWebDebugLogger} Factories 32.13 ms (1)
+févr. 18 22:11:33 symfony [info] {sfWebDebugLogger} Action "user/index" 34.83 ms (1)
+févr. 18 22:11:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 18 22:11:33 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 17.65 ms (1)
+févr. 18 22:11:33 symfony [info] {sfWebResponse} Send content (34612 o)
+févr. 18 22:11:36 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/show/id/14 with parameters array (  'module' => 'user',  'action' => 'show',  'id' => '14',)
+févr. 18 22:11:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 22:11:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 22:11:36 symfony [info] {userActions} Call "userActions->executeShow()"
+févr. 18 22:11:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 22:11:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p WHERE (p.id = ?) LIMIT 1 - (14)
+févr. 18 22:11:36 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/showSuccess.php"
+févr. 18 22:11:36 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 22:11:36 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 22:11:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 22:11:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 22:11:36 symfony [info] {sfWebDebugLogger} Configuration 6.46 ms (9)
+févr. 18 22:11:36 symfony [info] {sfWebDebugLogger} Factories 32.28 ms (1)
+févr. 18 22:11:36 symfony [info] {sfWebDebugLogger} Action "user/show" 55.70 ms (1)
+févr. 18 22:11:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 22:11:36 symfony [info] {sfWebDebugLogger} View "Success" for "user/show" 18.02 ms (1)
+févr. 18 22:11:36 symfony [info] {sfWebResponse} Send content (34925 o)
+févr. 18 22:11:38 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+févr. 18 22:11:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 22:11:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 22:11:38 symfony [info] {userActions} Call "userActions->executeIndex()"
+févr. 18 22:11:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 18 22:11:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.username AS p__username, p.email AS p__email, p.password AS p__password, p.firstname AS p__firstname, p.lastname AS p__lastname, p.address AS p__address, p.address2 AS p__address2, p.city AS p__city, p.zip AS p__zip, p.country AS p__country, p.isptkmember AS p__isptkmember, p.image AS p__image, p.website AS p__website, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM ptk_user p - ()
+févr. 18 22:11:38 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/indexSuccess.php"
+févr. 18 22:11:38 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 22:11:38 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 22:11:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 22:11:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 22:11:38 symfony [info] {sfWebDebugLogger} Configuration 6.49 ms (9)
+févr. 18 22:11:38 symfony [info] {sfWebDebugLogger} Factories 36.42 ms (1)
+févr. 18 22:11:38 symfony [info] {sfWebDebugLogger} Action "user/index" 38.36 ms (1)
+févr. 18 22:11:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 18 22:11:38 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 17.75 ms (1)
+févr. 18 22:11:38 symfony [info] {sfWebResponse} Send content (34612 o)
+févr. 18 22:16:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+févr. 18 22:16:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 18 22:16:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 18 22:16:53 symfony [info] {userActions} Call "userActions->executeNew()"
+févr. 18 22:16:53 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/newSuccess.php"
+févr. 18 22:16:53 symfony [info] {sfPartialView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/user/templates/_form.php"
+févr. 18 22:16:53 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 22:16:53 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 18 22:16:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 18 22:16:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 18 22:16:53 symfony [info] {sfWebDebugLogger} Configuration 7.84 ms (9)
+févr. 18 22:16:53 symfony [info] {sfWebDebugLogger} Factories 35.09 ms (1)
+févr. 18 22:16:53 symfony [info] {sfWebDebugLogger} Action "user/new" 29.64 ms (1)
+févr. 18 22:16:53 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 38.14 ms (1)
+févr. 18 22:16:53 symfony [info] {sfWebDebugLogger} Partial "user/_form" 23.62 ms (1)
+févr. 18 22:16:53 symfony [info] {sfWebResponse} Send content (50093 o)
+févr. 21 21:47:29 symfony [info] {myUser} Automatic user logout due to timeout
+févr. 21 21:47:29 symfony [info] {myUser} User is not authenticated
+févr. 21 21:47:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/" (/).
+févr. 21 21:47:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+févr. 21 21:47:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 21:47:29 symfony [info] {sfWebDebugLogger} Configuration 263.38 ms (5)
+févr. 21 21:47:29 symfony [info] {sfWebDebugLogger} Factories 266.88 ms (1)
+févr. 21 22:02:26 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /masterpage with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 22:02:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:02:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:02:26 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 22:02:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:02:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') LIMIT 1 - ()
+févr. 21 22:02:26 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 22:02:26 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "fb_impordivate" on "MasterPage"
+févr. 21 22:02:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+févr. 21 22:02:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:02:26 symfony [info] {sfWebDebugLogger} Configuration 226.70 ms (9)
+févr. 21 22:02:26 symfony [info] {sfWebDebugLogger} Factories 102.23 ms (1)
+févr. 21 22:02:26 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 37.43 ms (1)
+févr. 21 22:02:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:02:26 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 88.64 ms (1)
+févr. 21 22:06:08 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /masterpage with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 22:06:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:06:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:06:08 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 22:06:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:06:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') LIMIT 1 - ()
+févr. 21 22:06:08 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 22:06:08 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:08 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:06:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:06:08 symfony [info] {sfWebDebugLogger} Configuration 6.93 ms (9)
+févr. 21 22:06:08 symfony [info] {sfWebDebugLogger} Factories 35.22 ms (1)
+févr. 21 22:06:08 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 38.85 ms (1)
+févr. 21 22:06:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:06:08 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 15.66 ms (1)
+févr. 21 22:06:08 symfony [info] {sfWebResponse} Send content (37652 o)
+févr. 21 22:06:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /masterpage with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 22:06:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:06:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:06:47 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 22:06:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:06:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') LIMIT 1 - ()
+févr. 21 22:06:47 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 22:06:47 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:47 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:06:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:06:47 symfony [info] {sfWebDebugLogger} Configuration 5.99 ms (9)
+févr. 21 22:06:47 symfony [info] {sfWebDebugLogger} Factories 33.64 ms (1)
+févr. 21 22:06:47 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 46.14 ms (1)
+févr. 21 22:06:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:06:47 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 15.96 ms (1)
+févr. 21 22:06:47 symfony [info] {sfWebResponse} Send content (37652 o)
+févr. 21 22:06:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /masterpage with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 22:06:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:06:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:06:48 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 22:06:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:06:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') LIMIT 1 - ()
+févr. 21 22:06:49 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 22:06:49 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:49 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:06:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:06:49 symfony [info] {sfWebDebugLogger} Configuration 4.67 ms (9)
+févr. 21 22:06:49 symfony [info] {sfWebDebugLogger} Factories 30.95 ms (1)
+févr. 21 22:06:49 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 39.11 ms (1)
+févr. 21 22:06:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 21 22:06:49 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 16.65 ms (1)
+févr. 21 22:06:49 symfony [info] {sfWebResponse} Send content (37652 o)
+févr. 21 22:06:49 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /masterpage with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 22:06:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:06:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:06:49 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 22:06:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:06:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') LIMIT 1 - ()
+févr. 21 22:06:49 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 22:06:49 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:49 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:06:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:06:49 symfony [info] {sfWebDebugLogger} Configuration 4.50 ms (9)
+févr. 21 22:06:49 symfony [info] {sfWebDebugLogger} Factories 29.67 ms (1)
+févr. 21 22:06:49 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 37.25 ms (1)
+févr. 21 22:06:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:06:49 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 14.76 ms (1)
+févr. 21 22:06:49 symfony [info] {sfWebResponse} Send content (37652 o)
+févr. 21 22:06:50 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /masterpage with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 22:06:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:06:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:06:50 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 22:06:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:06:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') LIMIT 1 - ()
+févr. 21 22:06:50 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 22:06:50 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:50 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:06:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:06:50 symfony [info] {sfWebDebugLogger} Configuration 4.42 ms (9)
+févr. 21 22:06:50 symfony [info] {sfWebDebugLogger} Factories 30.39 ms (1)
+févr. 21 22:06:50 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 37.11 ms (1)
+févr. 21 22:06:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:06:50 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 14.52 ms (1)
+févr. 21 22:06:50 symfony [info] {sfWebResponse} Send content (37652 o)
+févr. 21 22:06:51 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /masterpage with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 22:06:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:06:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:06:51 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 22:06:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:06:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') LIMIT 1 - ()
+févr. 21 22:06:51 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 22:06:51 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:51 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:06:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:06:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:06:51 symfony [info] {sfWebDebugLogger} Configuration 4.40 ms (9)
+févr. 21 22:06:51 symfony [info] {sfWebDebugLogger} Factories 30.01 ms (1)
+févr. 21 22:06:51 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 36.19 ms (1)
+févr. 21 22:06:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:06:51 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 14.85 ms (1)
+févr. 21 22:06:51 symfony [info] {sfWebResponse} Send content (37652 o)
+févr. 21 22:09:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /masterpage with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 22:09:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:09:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:09:05 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 22:09:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:09:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') LIMIT 1 - ()
+févr. 21 22:09:05 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 22:09:05 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:09:05 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:09:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:09:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:09:05 symfony [info] {sfWebDebugLogger} Configuration 6.21 ms (9)
+févr. 21 22:09:05 symfony [info] {sfWebDebugLogger} Factories 33.38 ms (1)
+févr. 21 22:09:05 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 45.63 ms (1)
+févr. 21 22:09:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:09:05 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 13.89 ms (1)
+févr. 21 22:09:05 symfony [info] {sfWebResponse} Send content (37553 o)
+févr. 21 22:39:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /masterpage with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 22:39:46 symfony [info] {myUser} Automatic user logout due to timeout
+févr. 21 22:39:46 symfony [info] {myUser} User is not authenticated
+févr. 21 22:39:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:39:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:39:46 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 22:39:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:39:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') LIMIT 1 - ()
+févr. 21 22:39:46 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 22:39:46 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:39:46 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:39:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:39:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:39:46 symfony [info] {sfWebDebugLogger} Configuration 44.64 ms (10)
+févr. 21 22:39:46 symfony [info] {sfWebDebugLogger} Factories 73.04 ms (1)
+févr. 21 22:39:46 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 38.26 ms (1)
+févr. 21 22:39:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:39:46 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 14.85 ms (1)
+févr. 21 22:39:46 symfony [info] {sfWebResponse} Send content (38266 o)
+févr. 21 22:40:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:40:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:40:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:40:22 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:40:22 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/base/templates/indexSuccess.php"
+févr. 21 22:40:22 symfony [warning] {sfWebDebugLogger}  Warning at X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules\base\templates\indexSuccess.php on line 1 (Invalid argument supplied for foreach())
+févr. 21 22:40:22 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:40:22 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:40:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:40:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:40:22 symfony [info] {sfWebDebugLogger} Configuration 199.88 ms (9)
+févr. 21 22:40:22 symfony [info] {sfWebDebugLogger} Factories 92.68 ms (1)
+févr. 21 22:40:22 symfony [info] {sfWebDebugLogger} Action "base/index" 17.21 ms (1)
+févr. 21 22:40:22 symfony [info] {sfWebDebugLogger} View "Success" for "base/index" 17.21 ms (1)
+févr. 21 22:40:22 symfony [info] {sfWebResponse} Send content (29056 o)
+févr. 21 22:42:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:42:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:42:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:42:26 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:43:41 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:43:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:43:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:43:41 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:43:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:43:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:43:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:43:45 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:45:38 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:45:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:45:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:45:38 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:46:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:46:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:46:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:46:42 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:46:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:46:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid = ?) - ()
+févr. 21 22:46:42 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/base/templates/indexSuccess.php"
+févr. 21 22:46:42 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:46:42 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:46:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:46:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:46:42 symfony [info] {sfWebDebugLogger} Configuration 7.52 ms (9)
+févr. 21 22:46:42 symfony [info] {sfWebDebugLogger} Factories 35.01 ms (1)
+févr. 21 22:46:42 symfony [info] {sfWebDebugLogger} Action "base/index" 63.31 ms (1)
+févr. 21 22:46:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:46:42 symfony [info] {sfWebDebugLogger} View "Success" for "base/index" 13.33 ms (1)
+févr. 21 22:46:42 symfony [info] {sfWebResponse} Send content (37381 o)
+févr. 21 22:46:54 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:46:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:46:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:46:54 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:46:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:46:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid == ?) - ()
+févr. 21 22:46:54 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== NULL)' at line 1
+févr. 21 22:46:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+févr. 21 22:46:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:46:54 symfony [info] {sfWebDebugLogger} Configuration 5.85 ms (8)
+févr. 21 22:46:54 symfony [info] {sfWebDebugLogger} Factories 31.95 ms (1)
+févr. 21 22:46:54 symfony [info] {sfWebDebugLogger} Action "base/index" 109.22 ms (1)
+févr. 21 22:46:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+févr. 21 22:47:17 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:47:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:47:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:47:17 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:47:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:47:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid == ?) - (NULL)
+févr. 21 22:47:17 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 'NULL')' at line 1
+févr. 21 22:47:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+févr. 21 22:47:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:47:17 symfony [info] {sfWebDebugLogger} Configuration 5.60 ms (8)
+févr. 21 22:47:17 symfony [info] {sfWebDebugLogger} Factories 35.95 ms (1)
+févr. 21 22:47:17 symfony [info] {sfWebDebugLogger} Action "base/index" 93.06 ms (1)
+févr. 21 22:47:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+févr. 21 22:47:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:47:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:47:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:47:28 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:47:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:47:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid = ?) - (NULL)
+févr. 21 22:47:28 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/base/templates/indexSuccess.php"
+févr. 21 22:47:28 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:47:28 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:47:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:47:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:47:28 symfony [info] {sfWebDebugLogger} Configuration 7.99 ms (9)
+févr. 21 22:47:28 symfony [info] {sfWebDebugLogger} Factories 35.66 ms (1)
+févr. 21 22:47:28 symfony [info] {sfWebDebugLogger} Action "base/index" 41.92 ms (1)
+févr. 21 22:47:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 21 22:47:28 symfony [info] {sfWebDebugLogger} View "Success" for "base/index" 15.89 ms (1)
+févr. 21 22:47:28 symfony [info] {sfWebResponse} Send content (37390 o)
+févr. 21 22:48:59 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:48:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:48:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:48:59 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:48:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:48:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid = ?) - ()
+févr. 21 22:48:59 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/base/templates/indexSuccess.php"
+févr. 21 22:48:59 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:48:59 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:48:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:48:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:48:59 symfony [info] {sfWebDebugLogger} Configuration 6.83 ms (9)
+févr. 21 22:48:59 symfony [info] {sfWebDebugLogger} Factories 35.47 ms (1)
+févr. 21 22:48:59 symfony [info] {sfWebDebugLogger} Action "base/index" 49.78 ms (1)
+févr. 21 22:48:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:48:59 symfony [info] {sfWebDebugLogger} View "Success" for "base/index" 16.18 ms (1)
+févr. 21 22:48:59 symfony [info] {sfWebResponse} Send content (37382 o)
+févr. 21 22:54:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:54:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:54:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:54:31 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:54:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:54:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid = ?) - ()
+févr. 21 22:54:31 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/base/templates/indexSuccess.php"
+févr. 21 22:54:31 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:54:31 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:54:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:54:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:54:31 symfony [info] {sfWebDebugLogger} Configuration 7.03 ms (9)
+févr. 21 22:54:31 symfony [info] {sfWebDebugLogger} Factories 34.64 ms (1)
+févr. 21 22:54:31 symfony [info] {sfWebDebugLogger} Action "base/index" 50.73 ms (1)
+févr. 21 22:54:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 21 22:54:31 symfony [info] {sfWebDebugLogger} View "Success" for "base/index" 14.26 ms (1)
+févr. 21 22:54:31 symfony [info] {sfWebResponse} Send content (37380 o)
+févr. 21 22:57:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 22:57:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 22:57:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 22:57:33 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 22:57:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 22:57:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid IS NULL) - ()
+févr. 21 22:57:33 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/base/templates/indexSuccess.php"
+févr. 21 22:57:33 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:57:33 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 22:57:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 22:57:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 22:57:33 symfony [info] {sfWebDebugLogger} Configuration 6.80 ms (9)
+févr. 21 22:57:33 symfony [info] {sfWebDebugLogger} Factories 34.10 ms (1)
+févr. 21 22:57:33 symfony [info] {sfWebDebugLogger} Action "base/index" 73.28 ms (1)
+févr. 21 22:57:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 22:57:33 symfony [info] {sfWebDebugLogger} View "Success" for "base/index" 15.72 ms (1)
+févr. 21 22:57:33 symfony [info] {sfWebResponse} Send content (37307 o)
+févr. 21 23:02:24 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 23:02:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 23:02:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 23:02:24 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 23:02:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 23:02:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid IS NULL) - ()
+févr. 21 23:02:25 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/base/templates/indexSuccess.php"
+févr. 21 23:02:25 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 23:02:25 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 23:02:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 23:02:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 23:02:25 symfony [info] {sfWebDebugLogger} Configuration 5.94 ms (9)
+févr. 21 23:02:25 symfony [info] {sfWebDebugLogger} Factories 33.96 ms (1)
+févr. 21 23:02:25 symfony [info] {sfWebDebugLogger} Action "base/index" 70.75 ms (1)
+févr. 21 23:02:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 23:02:25 symfony [info] {sfWebDebugLogger} View "Success" for "base/index" 14.20 ms (1)
+févr. 21 23:02:25 symfony [info] {sfWebResponse} Send content (37377 o)
+févr. 21 23:21:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /masterpage with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 23:21:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 23:21:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 23:21:05 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 23:21:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 23:21:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') - ()
+févr. 21 23:21:05 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 23:21:05 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "0" on "MasterPage"
+févr. 21 23:21:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+févr. 21 23:21:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 23:21:06 symfony [info] {sfWebDebugLogger} Configuration 28.28 ms (10)
+févr. 21 23:21:06 symfony [info] {sfWebDebugLogger} Factories 38.79 ms (1)
+févr. 21 23:21:06 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 37.10 ms (1)
+févr. 21 23:21:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 21 23:21:06 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 74.34 ms (1)
+févr. 21 23:21:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/masterpage/" (/).
+févr. 21 23:21:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+févr. 21 23:21:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 23:21:13 symfony [info] {sfWebDebugLogger} Configuration 3.76 ms (5)
+févr. 21 23:21:13 symfony [info] {sfWebDebugLogger} Factories 36.53 ms (1)
+févr. 21 23:22:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 21 23:22:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 23:22:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 23:22:30 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 21 23:22:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 23:22:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid IS NULL) - ()
+févr. 21 23:22:31 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/base/templates/indexSuccess.php"
+févr. 21 23:22:31 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 23:22:31 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 23:22:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 23:22:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 23:22:31 symfony [info] {sfWebDebugLogger} Configuration 10.84 ms (9)
+févr. 21 23:22:31 symfony [info] {sfWebDebugLogger} Factories 43.04 ms (1)
+févr. 21 23:22:31 symfony [info] {sfWebDebugLogger} Action "base/index" 80.21 ms (1)
+févr. 21 23:22:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 21 23:22:31 symfony [info] {sfWebDebugLogger} View "Success" for "base/index" 13.45 ms (1)
+févr. 21 23:22:31 symfony [info] {sfWebResponse} Send content (37322 o)
+févr. 21 23:23:36 symfony [info] {sfPatternRouting} Match route "masterpage" (/mp/) for /mp/ with parameters array (  'module' => 'default',  'action' => 'index',)
+févr. 21 23:23:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 23:23:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 23:23:36 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+févr. 21 23:23:36 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+févr. 21 23:23:36 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+févr. 21 23:23:36 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+févr. 21 23:23:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 23:23:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 23:23:36 symfony [info] {sfWebDebugLogger} Configuration 67.11 ms (10)
+févr. 21 23:23:36 symfony [info] {sfWebDebugLogger} Factories 83.50 ms (1)
+févr. 21 23:23:36 symfony [info] {sfWebDebugLogger} Action "default/index" 0.10 ms (1)
+févr. 21 23:23:36 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 30.49 ms (1)
+févr. 21 23:23:36 symfony [info] {sfWebResponse} Send content (30633 o)
+févr. 21 23:23:59 symfony [info] {sfPatternRouting} Match route "masterpage" (/mp/) for /mp/ with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 23:23:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 23:23:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 23:23:59 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 23:23:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 23:23:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') - ()
+févr. 21 23:23:59 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 23:23:59 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "0" on "MasterPage"
+févr. 21 23:23:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+févr. 21 23:23:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 23:23:59 symfony [info] {sfWebDebugLogger} Configuration 47.67 ms (10)
+févr. 21 23:23:59 symfony [info] {sfWebDebugLogger} Factories 78.05 ms (1)
+févr. 21 23:23:59 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 37.80 ms (1)
+févr. 21 23:23:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 21 23:23:59 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 72.54 ms (1)
+févr. 21 23:25:09 symfony [info] {sfPatternRouting} Match route "masterpage" (/mp/) for /mp/ with parameters array (  'module' => 'masterpage',  'action' => 'index',)
+févr. 21 23:25:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 21 23:25:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 21 23:25:09 symfony [info] {masterpageActions} Call "masterpageActions->executeIndex()"
+févr. 21 23:25:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 21 23:25:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.objecttype = 'MasterPage') - ()
+févr. 21 23:25:09 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/masterpage/templates/indexSuccess.php"
+févr. 21 23:25:09 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 23:25:09 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 21 23:25:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 21 23:25:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 21 23:25:09 symfony [info] {sfWebDebugLogger} Configuration 6.54 ms (9)
+févr. 21 23:25:09 symfony [info] {sfWebDebugLogger} Factories 35.39 ms (1)
+févr. 21 23:25:09 symfony [info] {sfWebDebugLogger} Action "masterpage/index" 36.14 ms (1)
+févr. 21 23:25:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 21 23:25:09 symfony [info] {sfWebDebugLogger} View "Success" for "masterpage/index" 13.69 ms (1)
+févr. 21 23:25:09 symfony [info] {sfWebResponse} Send content (37364 o)
+févr. 22 00:00:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 22 00:00:52 symfony [info] {myUser} Automatic user logout due to timeout
+févr. 22 00:00:52 symfony [info] {myUser} User is not authenticated
+févr. 22 00:00:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 22 00:00:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 22 00:00:52 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 22 00:00:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 22 00:00:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid IS NULL) - ()
+févr. 22 00:00:52 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/base/templates/indexSuccess.php"
+févr. 22 00:00:52 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 22 00:00:52 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 22 00:00:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 22 00:00:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 22 00:00:52 symfony [info] {sfWebDebugLogger} Configuration 6.97 ms (9)
+févr. 22 00:00:52 symfony [info] {sfWebDebugLogger} Factories 37.37 ms (1)
+févr. 22 00:00:52 symfony [info] {sfWebDebugLogger} Action "base/index" 76.21 ms (1)
+févr. 22 00:00:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+févr. 22 00:00:52 symfony [info] {sfWebDebugLogger} View "Success" for "base/index" 14.67 ms (1)
+févr. 22 00:00:52 symfony [info] {sfWebResponse} Send content (38030 o)
+févr. 23 18:52:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'base',  'action' => 'index',)
+févr. 23 18:52:47 symfony [info] {myUser} Automatic user logout due to timeout
+févr. 23 18:52:47 symfony [info] {myUser} User is not authenticated
+févr. 23 18:52:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+févr. 23 18:52:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+févr. 23 18:52:48 symfony [info] {baseActions} Call "baseActions->executeIndex()"
+févr. 23 18:52:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+févr. 23 18:52:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.pid AS c__pid, c.publishstart AS c__publishstart, c.publishend AS c__publishend, c.objecttype AS c__objecttype, c.user_id AS c__user_id, c.content AS c__content, c.name AS c__name, c.address AS c__address, c.address2 AS c__address2, c.city AS c__city, c.zip AS c__zip, c.email AS c__email, c.ccpnumber AS c__ccpnumber, c.facebook AS c__facebook, c.twitter AS c__twitter, c.title AS c__title, c.fbcontentlink AS c__fbcontentlink, c.fbimportdate AS c__fbimportdate, c.description AS c__description, c.comment AS c__comment, c.post_id AS c__post_id, c.album_id AS c__album_id, c.photo_id AS c__photo_id, c.mix_id AS c__mix_id, c.image AS c__image, c.imagethumb AS c__imagethumb, c.imageheight AS c__imageheight, c.imagewidth AS c__imagewidth, c.imagethumbwidth AS c__imagethumbwidth, c.imagethumbheight AS c__imagethumbheight, c.artist_id AS c__artist_id, c.website AS c__website, c.myspace AS c__myspace, c.contactinfo AS c__contactinfo, c.audiourl AS c__audiourl, c.start AS c__start, c.end AS c__end, c.eventlocation_id AS c__eventlocation_id, c.phone AS c__phone, c.mapurl AS c__mapurl, c.locationimage AS c__locationimage, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM content_object c WHERE (c.pid IS NULL) - ()
+févr. 23 18:52:48 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\modules/base/templates/indexSuccess.php"
+févr. 23 18:52:48 symfony [info] {sfPHPView} Decorate content with "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 23 18:52:48 symfony [info] {sfPHPView} Render "X:\DEV\web\sfprojects\poomtshak\apps\frontend\templates/layout.php"
+févr. 23 18:52:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+févr. 23 18:52:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+févr. 23 18:52:48 symfony [info] {sfWebDebugLogger} Configuration 7.76 ms (9)
+févr. 23 18:52:48 symfony [info] {sfWebDebugLogger} Factories 107.33 ms (1)
+févr. 23 18:52:48 symfony [info] {sfWebDebugLogger} Action "base/index" 158.85 ms (1)
+févr. 23 18:52:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+févr. 23 18:52:48 symfony [info] {sfWebDebugLogger} View "Success" for "base/index" 42.93 ms (1)
+févr. 23 18:52:48 symfony [info] {sfWebResponse} Send content (38032 o)

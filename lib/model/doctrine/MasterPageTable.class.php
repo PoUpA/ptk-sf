@@ -16,4 +16,9 @@ class MasterPageTable extends ContentObjectTable
     {
         return Doctrine_Core::getTable('MasterPage');
     }
+    
+    public function getFirstMasterPage()
+    {
+        return $this->createQuery('m')->fetchOne();
+    }
 }

@@ -34,3 +34,13 @@ UserGroup:
         PtkUser: PoUpA
       Admin:
         PtkUser: Admin
+MasterPage:
+  Default:
+    Content: This is PoomTshaK! Website 
+    PtkUser: PoUpA
+Post:
+  FirstPost:
+    Title: First Post
+    Content: This is my first post yeah !
+    PtkUser: PoUpA
+    
